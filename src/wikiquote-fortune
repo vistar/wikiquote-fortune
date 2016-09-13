@@ -33,7 +33,7 @@ show = show_.replace('_', ' ')
 dateonly = (len(sys.argv) > 2) and (sys.argv[2] == 'date-only')
 
 
-command = ['wget', 'http://en.wikiquote.org/wiki/%s' % show_, '-O', '-']
+command = ['wget', 'http://ru.wikiquote.org/wiki/%s' % show_, '-O', '-']
 proc = Popen(command, stdout = PIPE, stderr = sys.stderr)
 wiki = proc.communicate()[0]
 if proc.poll() is None:
